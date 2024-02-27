@@ -1,0 +1,35 @@
+body{
+    margin: 20px;
+}
+
+label {
+    font-family: sans-serif;
+    margin-right: 10px;
+}  
+
+progress {
+     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(27, 100, 25);
+} 
+/* chrome, safari and Edge */
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(27, 100, 25);
+}
+
+progress[value]::-webkit-progress-value{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(45deg, #ffff0a 29.41%, #418727 29.41%, #418727 50%, #ffff0a 50%, #ffff0a 79.41%, #418727 79.41%, #418727 100%);
+background-size: 48.08px 48.08px;
+}
+progress[value]::-moz-progress-bar{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(45deg, #ffff0a 29.41%, #418727 29.41%, #418727 50%, #ffff0a 50%, #ffff0a 79.41%, #418727 79.41%, #418727 100%);
+background-size: 48.08px 48.08px;
+}
